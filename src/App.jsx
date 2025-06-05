@@ -2,7 +2,12 @@ import React from "react"
 import {useState,useEffect} from "react"
 import  "./App.css"
 
+
+
 function App(){
+
+  const apiKey = import.meta.env.VITE_OMDB_API_KEY;
+
   const [name,setName] = useState("");
   const [moviesList,setMoviesList] = useState([]);
   const handleSearch = async () => {
@@ -11,7 +16,7 @@ function App(){
     }
     else{
       try{
-        const response = await fetch(`http://www.omdbapi.com/?s=${name}&apikey=117aea9a`);
+        const response = await fetch(`http://www.omdbapi.com/?s=${name}&apikey=${apiKey}`);
         if(response.ok){
           const result = await response.json();
           setMoviesList(result.Search);
