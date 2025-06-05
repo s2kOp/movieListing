@@ -16,7 +16,7 @@ function App(){
     }
     else{
       try{
-        const response = await fetch(`http://www.omdbapi.com/?s=${name}&apikey=${apiKey}`);
+        const response = await fetch(`https://www.omdbapi.com/?s=${name}&apikey=${apiKey}`);
         if(response.ok){
           const result = await response.json();
           setMoviesList(result.Search);
