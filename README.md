@@ -17,7 +17,7 @@ A simple and elegant React-based movie search application that uses the [OMDb AP
 - OMDb API
 
 ## 📷 Preview
-![Homepage Screenshot](./homescreenshot.png)
+![Homepage Screenshot](./screenshots/homescreenshot.png)
 
  
 
