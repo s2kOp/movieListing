@@ -1,0 +1,92 @@
+*{
+  padding: none;
+  margin: none;
+  box-sizing: border-box;
+  color: white;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(43, 39, 39);
+}
+
+.headPart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0px;
+}
+
+.headPart h1{
+  font-size: 2.5em;
+}
+
+.headPart p{
+  font-style: italic;
+  color: rgb(225, 208, 208)
+}
+
+.inputData{
+  display: flex;
+  justify-content: center;
+}
+
+.inputData input{
+  width: 400px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  padding: 0px 10px;
+  outline: none;
+  color: black;
+}
+
+.inputData button{
+  margin-left: 8px;
+  height: 40px;
+  width: 80px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: orange;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.inputData button:hover{
+  background-color: rgb(176, 117, 7);
+
+}
+
+.movieList{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  column-gap: 10px;
+  row-gap: 8px;
+}
+
+.movieCards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(65, 61, 61, 0.221);
+  padding: 12px 20px;
+}
+
+.movieCards img{
+  height: 300px;
+}
+
+.movieCards h4{
+  text-align: center;
+}
+
+.movieCards p{
+  text-align: center;
+}
